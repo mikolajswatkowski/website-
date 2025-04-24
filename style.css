@@ -1,31 +1,57 @@
 body {
     background-color:#FAF9F6;
     font-family: Monaco, monospace;
-  }
+}
+.homePage{
+  color:#222;
+  text-align: center;
+
+}
+
 h1{
   font-size: 36px;
 }
 
-.centerContent{
-  text-align: center;
-}
+summary{
+  cursor: pointer;
+ }
 
-.reviewPages{
+header{
+  position: sticky;
+  top: 0;
+  width: 100%;
+ }
+
+ .navbar ul{
   background-color:#FAF9F6;
-  font-family: Georgia, serif;
-  font-size: 20px;
+  list-style-type: none; /* removing bullet points from the <li> links*/
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.navbar a {
   color: #222;
-  max-width: 700px;
-  margin: 60px auto;
-  line-height: 1.8;
+  text-decoration: none; /* removing the underline from the link */
+  display: block;
+  padding: 20px;
+  font-size: 20px;
 
 }
- .otherPages{
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.navbar li{
+  float: right;
+}
+
+main{
   max-width: 700px;
   margin: auto ;
   line-height: 1.8;
- }
+}
 
- summary{
-  cursor: pointer;
- }
+
+
