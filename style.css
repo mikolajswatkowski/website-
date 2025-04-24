@@ -1,0 +1,31 @@
+body {
+    background-color:#FAF9F6;
+    font-family: Monaco, monospace;
+  }
+h1{
+  font-size: 36px;
+}
+
+.centerContent{
+  text-align: center;
+}
+
+.reviewPages{
+  background-color:#FAF9F6;
+  font-family: Georgia, serif;
+  font-size: 20px;
+  color: #222;
+  max-width: 700px;
+  margin: 60px auto;
+  line-height: 1.8;
+
+}
+ .otherPages{
+  max-width: 700px;
+  margin: auto ;
+  line-height: 1.8;
+ }
+
+ summary{
+  cursor: pointer;
+ }
