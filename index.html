@@ -2,26 +2,96 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Welcome</title>
+  <title>Mikołaj Swatkowski</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-  <p>Wrocław, University of Business and Economics, BI</p><br>
 
+    <header class="navbar">
+      <div class="left">Mikołaj Swatkowski</div>
+      <nav class="right">
+        <ul>
+            <li><a href="index.html">M S</a></li>
+            <li><a href="blog.html">B</a></li>
+            <li><a href="reviews.html">R</a></li>
+            <li><a href="pictures.html">P</a></li>
+            <li><a href="contact.html">C</a></li>
+        </ul>
+      </nav>
+    </header>
+
+  
   <div class="homePage">
-    <h1>Mikołaj Swatkowski</h1>
-    <img src="kowalksi.jpg" width="400"><br><br>
+  
+    <div class="scroll-space" id="scroll-space"></div>
+  
+    <div class="letters">
+      <div class="letter m">M</div>
+      <div class="letter s">S</div>
+    </div>
+  
+    <div class="navigation">
+      
+      <nav>
+        <a href="info.html">Info</a>
+        <a href="blog.html">Blog</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="pictures.html">Pictures</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    
+    </div>
 
-    <nav>
-      <a href="info.html">Info</a> |
-      <a href="blog.html">Blog</a> |
-      <a href="reviews.html">Reviews</a>
-    </nav>
-
+    <img src="photos/myself.jpg" width="700" >
+    
   </div>
 
+  <footer class="footer-footer">
+    <hr>
+      <div class="footer-icons">
+        <a href="https://letterboxd.com/patus17pl/" target="_blank">
+          <img src="icons/square-letterboxd-brands.svg" alt="Letterboxd">
+        </a>
+        <a href="https://github.com/mikolajswatkowski" target="_blank">
+          <img src="icons/square-github-brands.svg" alt="GitHub">
+        </a>
+        <a href="" target="_blank">
+          <img src="icons/linkedin-brands.svg" alt="LinkedIn">
+        </a>
+        <a href="https://open.spotify.com/user/31usnyx6cs3htcsc5j646dlzsu3m" target="_blank">
+          <img src="icons/spotify-brands.svg" alt="Spotify">
+        </a>
+      <p>&copy; 2025 Mikołaj Swatkowski</p>
+      <p>Business Informatics student attending Wrocław Univeristy of Economics and Business</p>
+  </div>
+</footer>
+  
+
+  <script>
+    const m = document.querySelector('.letter.m');
+    const s = document.querySelector('.letter.s');
+    const scrollSpace = document.getElementById('scroll-space');
+
+    function updateScrollLength() {
+      const vw = window.innerWidth;
+      const maxMove = vw / 2 + (0.5 * 15 * vw / 100); // Half screen + half letter width
+
+      // Set scroll height so scrolling stops exactly when letters are fully out
+      scrollSpace.style.height = `${maxMove * 2}px`; // Enough scroll distance
+
+      window.addEventListener('scroll', () => {
+        const scrollY = Math.min(window.scrollY, maxMove); // Clamp scroll
+        m.style.transform = `translateX(calc(-50% - ${scrollY}px))`;
+        s.style.transform = `translateX(calc(-50% + ${scrollY}px))`;
+      });
+    }
+
+    updateScrollLength();
+    window.addEventListener('resize', updateScrollLength);
+  </script>
+  
 </body>
 </html>
 
