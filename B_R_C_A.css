@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace;
+  background-color: #FAF9F6;
+  color: #222;
+  scroll-behavior: smooth;
+}
+
+/* Header / Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  z-index: 1000;
+  background-color: #FAF9F6;
+
+}
+
+.navbar .left {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .right {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+
+.navbar .right a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #222;
+
+}
+
+.right nav a:hover {
+    text-decoration: underline;
+}
+
+/* Główna treść */
+main {
+  max-width: 700px;
+  margin: 2rem auto;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 5rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+}
+
+.content{
+    font-size: 1rem;
+}
+
+details summary {
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+details p {
+  margin: 0.5rem 0;
+}
+
+/* Footer */
+.footer-footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #fff;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+/*Reviews - links*/
+
+.review_links a{
+    text-decoration: none;
+    color: #222;
+    font-size: 1rem;
+}
+.review_links a:hover{
+    text-decoration: underline;
+}
+
+/*Contact special code*/
+
+.contact-container{
+  display: flex;
+  align-items: center;
+
+}
+
+.contact-input{
+  width: 343px;
+  height: 30px;
+  border: 1.5px solid #222;
+  margin-bottom: 10px;
+
+
+}
+
+.mail{
+  width: 700px;
+  height: 30px;
+  border: 1.5px solid #222;
+  margin-bottom: 10px;
+}
+
+.text-area{
+  width: 700px;
+  height: 120px;
+  border: 1.5px solid #222;
+  margin-bottom: 10px;
+
+}
+
+.submit-button{
+  height: 30px;
+  border: 1.5px solid #222;
+  margin-bottom: 10px;
+  background-color: white;
+  color: grey;
+  cursor: pointer;
+}

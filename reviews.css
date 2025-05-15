@@ -1,0 +1,118 @@
+/* Główna treść */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+main img {
+    width: 900px;
+}
+
+h2{
+  margin-bottom: 1rem;
+  margin-top: 5rem;
+}
+
+p{
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    font-size: 16px;
+}
+
+/* "comments" */
+
+.footer-comments{
+  max-width: 900px;
+  margin: auto ;
+  line-height: 1.8;
+  font-size: 14px;
+  color: #555555;
+}
+
+.frame {
+  border: 1px solid #555555;   
+  padding: 4px;            
+  width: 700px;         
+  border-radius: 4px;
+  height: 25px; /* slightly increased height for spacing */
+  display: flex;
+  align-items: center; /* vertically centers content */
+  margin-bottom: 3rem;
+}
+
+
+
+
+/* basic*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace;
+  line-height: 1.6;
+  background-color: #FAF9F6;
+  color: #222;
+  padding: 1rem;
+}
+
+/* Header / Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  z-index: 1000;
+  background-color: #FAF9F6;
+
+}
+
+.navbar .left {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .right {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+
+.navbar .right a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #222;
+
+}
+
+.right nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Footer */
+.footer-footer {
+  text-align: center;
+  padding: 1rem 1rem;
+  background-color: #fff;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-icons img {
+  width: 30px;
+  height: 30px;
+}
