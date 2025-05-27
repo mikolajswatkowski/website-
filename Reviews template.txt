@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pictures</title>
-    <link rel="stylesheet" href="B_R_C_A.css">
-    <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>...</title>
+  <link rel="stylesheet" href="reviews.css">
+  <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-
+    
   <header class="navbar">
-    <button class="hamburger" aria-label="Menu">&#9776;</button>
-
     <div class="left">Mikołaj Swatkowski</div>
     <nav class="right">
       <a href="index.html">M S</a>
@@ -23,21 +22,45 @@
     </nav>
   </header>
 
-  <section class="gallery">
-      <img src="picturesPortfolio/DSC01253.jpg" alt="001">
-      <img src="picturesPortfolio/DSC01262.jpg" alt="003">
-      <img src="picturesPortfolio/DSC01265.jpg" alt="004">
-      <img src="picturesPortfolio/DSC01331.jpg" alt="007">
-      <img src="picturesPortfolio/DSC01299.jpg" alt="005">
-      <img src="picturesPortfolio/DSC01318.jpg" alt="006">
-      <img src="picturesPortfolio/DSC01462.jpg" alt="008">
-      <img src="picturesPortfolio/f0490752.jpg" alt="009">
-      <img src="picturesPortfolio/f3120768.jpg" alt="010">
-      <img src="picturesPortfolio/f61279808.jpg" alt="011">
-      <img src="picturesPortfolio/f61563392.jpg" alt="012">
-  </section>
+  
+  <main class="otherPages">
+      <h2>...</h2>
+      <img src="..." width="700">
+      <p>
 
-    <footer class="footer-footer">
+      </p>
+      <p>
+
+      </p>
+      <p>
+
+      </p>
+      <p>
+        
+      </p>
+      <p>
+
+      </p>
+      <span>&#9733;</span> 
+      <span>&#9733;</span>
+      <span>&#9733;</span>
+      <span>&#9734;</span>
+      <span>&#9734;</span>
+      <br><br><br>
+  </main>
+
+    <footer class="footer-comments">
+        <h3>Comments</h3>
+        <p>
+            It's too complicated for now...<br>
+            Have a blessed day!
+        </p>
+        <div class = "frame">
+            <p>You can allways think about it or talk to someone!</p>
+        </div>
+    </footer>
+
+  <footer class="footer-footer">
     <div class="footer-icons">
       <a href="https://letterboxd.com/patus17pl/" target="_blank">
         <img src="icons/square-letterboxd-brands.svg" alt="Letterboxd">
@@ -55,10 +78,6 @@
     <p>&copy; 2025 Mikołaj Swatkowski</p>
     <p>Business Informatics student attending Wrocław Univeristy of Economics and Business</p>
   </footer>
-
-
-  <script src="script.js"></script>
-
 
 </body>
 </html>

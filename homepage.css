@@ -29,7 +29,7 @@ html, body {
 }
 
 .navbar .left {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: bold;
 }
 
@@ -37,7 +37,7 @@ html, body {
   list-style: none;
   display: flex;
   gap: 2rem;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 .navbar .right a {
@@ -126,5 +126,37 @@ html, body {
   height: 30px;
 }
 
+.hamburger {
+  display: none;
+  font-size: 2.2rem;
+  background: none;
+  border: none;
+  color: #222;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* Mobilna wersja */
+@media (max-width: 1000px) {
+  .hamburger {
+    display: block;
+  }
+
+  .right {
+    position: absolute;
+    top: 70px; /* poniżej navbaru */
+    width: 100%;
+    background-color: #FAF9F6;
+    display: none !important;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 0;
+    border-top: 1px solid #ccc;
+  }
+
+  .right.active {
+    display: flex !important;
+  }
+}
 
 
